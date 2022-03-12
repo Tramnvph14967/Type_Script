@@ -3,7 +3,7 @@ export{}
 console.log('Hello typescript');
 const a: number = 10;
 const b: number = 30;
-const c: number = 30;
+
 // console.log(a+b);
 //Khai b
 type  User = {
