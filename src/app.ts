@@ -12,7 +12,8 @@ type  User = {
 }
 interface Admin{
     id: number;
-    name: string
+    name: string;
+    status?: boolean
 }
 interface Admin{
     role: 1;
@@ -44,3 +45,14 @@ sum(a,b);
  * baseUrl: "./url"
  * sourceMap: true
  */
+
+
+
+type Product = {
+    id: number,
+    name: string
+}
+const getProducts = <T extends Product>(products : T[]) => {
+    const result = products.map(item => `<div>${item.name}</div>`)
+}
+getProducts([{id: 1, name:"A"}, {id: 2, name:"B"}]);
